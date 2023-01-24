@@ -1,0 +1,140 @@
+/* .card{
+    height: 60vh;
+    margin:25px;
+    padding: 25px;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.center img{
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+    height: 162px;
+    width:250px;
+    margin: 20px 0px;
+}
+h4,h6{
+    font-weight: 400;
+    
+} */
+
+.quantity_container{
+  display: flex;
+  justify-content: space-between;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.card-table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+.table button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.table button:hover {
+  background-color: #0069d9;
+}
+
+.table button.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.table .fa-trash-alt {
+  margin-right: 5px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .center img {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+    }
+     */
+.center img {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  height: 162px;
+  width: 250px;
+  margin: 20px 0px;
+}
+.center h4,
+h6 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.center button {
+  margin-top: 20px;
+}
+
+/*button au dessous du tableau:*/
+.button-container {
+  text-align: center;
+}
+
+.order-button, .add-button, .remove-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.order-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.add-button {
+  background-color: #008CBA;
+  color: white;
+}
+
+.remove-button {
+  background-color: #f44336;
+  color: white;
+}

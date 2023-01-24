@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>3D Animated Login Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="cover"></div>
+			<div class="shadow"></div>
+			<div class="content">
+				<div class="form">
+					<h3 class="logo"><i class="fa-solid fa-key"></i></h3>
+					<h2>Sign in</h2>
+					<div class="inputBox">
+						<input type="text" required>
+						<i class="fa-solid fa-user"></i>
+						<span>Username</span>
+					</div>
+					<div class="inputBox">
+						<input type="password" required>
+						<i class="fa-solid fa-lock"></i>
+						<span>Password</span>
+					</div>
+					<div class="links">
+						<a href="#"><i class="fa-solid fa-question"></i> Forgot Password</a>
+						<a routerLink='/inscription'><i class="fa-solid fa-user-plus"></i> Sign up</a>
+					</div>
+					<div class="inputBox">
+						<input type="submit" value="Login">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire de connexion 3D animé</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="cover"></div>
+			<div class="shadow"></div>
+			<div class="content">
+				<form name="form" ngForm #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+					<div class="form">
+						<h3 class="logo"><i class="fa-solid fa-key"></i></h3>
+						<h2>Connexion</h2>
+						<div class="inputBox">
+							<input type="email" name="email" required ngModel [(ngModel)]="email" />
+							<i class="fa-solid fa-user"></i>
+							<span>Email</span>
+						</div>
+						<div class="inputBox">
+							<input type="password" name="password" required ngModel [(ngModel)]="password" />
+							<i class="fa-solid fa-lock"></i>
+							<span>Mot de passe</span>
+						</div>
+						<div class="links">
+							<a href="#"><i class="fa-solid fa-question"></i> Mot de passe oublié</a>
+							<a routerLink="/inscription"><i class="fa-solid fa-user-plus"></i> S'inscrire</a>
+						</div>
+						<div class="inputBox">
+							<input type="submit" value="Connexion" (click)="login()" [disabled]="f.invalid" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

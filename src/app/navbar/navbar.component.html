@@ -1,0 +1,58 @@
+<!-- Grey with black text -->
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a routerLink="/listPro">
+            <img class="logo" src="assets/DouaeShop.png" alt="Douae Shop" />
+          </a>
+          <span class="myWebsite">Douae Shop</span>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/panier"
+            ><i style="font-size: 30px" class="fa-solid fa-cart-shopping"></i>
+            <div style="font-size: 10px" class="badge bg-danger">{{totalItem}}</div></a
+          >
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/authentification"
+            style="
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                sans-serif;
+            "
+            >Se connecter</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+           [routerLink]="['/inscription']"
+            style="
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                sans-serif;
+            "
+            >Inscription</a
+          >
+        </li>
+        <li class="nav-item">
+          <button (click)="logout()">
+          <a
+            class="nav-link"
+           [routerLink]="['authentification']"
+            style="
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                sans-serif;
+            "
+            >Logout</a
+          >
+        </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  

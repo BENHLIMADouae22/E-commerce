@@ -1,0 +1,50 @@
+<div *ngIf="logged()">
+<app-navbar></app-navbar>
+
+<div
+  style="
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  "
+>
+  <div class="container" style="float: left">
+    <form class="d-flex">
+      <input
+        class="form-control"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+        #search
+      />
+      <button
+        (click)="getProductsBySearch(search.value)"
+        class="btn btn-outline-success"
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
+  </div>
+  <div class="container">
+    <label for="category">Choose a category: </label>
+
+    <select #categories (change)="getProductByCategory(categories.value)" >
+      
+      <option value="All" >All</option>
+      <option *ngFor="let cat of categoriesList" value="{{ cat }}">
+        {{ cat }}
+      </option>
+    </select>
+    
+    
+  </div>
+  
+  <app-product-item 
+    *ngFor="let elt of products"
+    [product]="elt"
+  ></app-product-item>
+</div>
+
+</div>

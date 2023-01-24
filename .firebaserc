@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "douaeshop-5af52": {
+      "hosting": {
+        "my-app": [
+          "douaeshop-5af52"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "douaeshop-5af52"
+  }
+}

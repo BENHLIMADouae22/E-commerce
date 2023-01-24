@@ -1,0 +1,22 @@
+.container{
+    margin: 10px;
+}
+/* Style pour la liste de catégories */
+select {
+    /* Marge et padding pour un espace suffisant autour de la liste */
+    margin: 20px;
+    padding: 10px;
+    
+    /* Bordure pour une meilleure visibilité */
+    border: 1px solid #ccc;
+    
+}
+option {
+      /* Padding pour un espace interne */
+      padding: 10px;
+      
+      /* Couleur de police pour une meilleure lisibilité */
+      color: #333;
+}
+  
+  

@@ -1,0 +1,17 @@
+
+<div class="card" style="width: 400px;height:500px;justify-content:space-between;margin: 30px 0px;">
+  <div>
+    <img  class="card-img-top" src="{{getImages()}}" alt="image" style="height: 50; width: 50"  [routerLink]="['/detail',product?.id]">
+    <h5 class="card-header">{{ product?.title }}</h5>
+  </div>
+  
+  <div class="card-body">
+    <h5 class="card-title">{{ product?.description }}</h5>
+    <p class="card-text"><strong>price: </strong>{{ product?.price }}Dhs</p>
+  </div>
+
+  <div style="display: flex;justify-content: space-around;margin: 15px 0;">
+    <a *ngIf="product?.stock" class="btn btn-primary" (click)=addToCart(product) (click)=MessageAddToCart()
+      >Ajouter au panier</a>
+  </div>
+</div>
